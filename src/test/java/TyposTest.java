@@ -7,7 +7,6 @@ public class TyposTest extends BaseTest {
 
     @Test
     public void checkTypos() {
-
         driver.get("https://the-internet.herokuapp.com/typos");
         WebElement paragraph = driver.findElement(By.tagName("p"));
         String expectedText = paragraph.getText();

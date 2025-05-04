@@ -12,6 +12,7 @@ public class DropDownTest extends BaseTest {
         WebElement dropdownElement = driver.findElement(By.id("dropdown"));
         SoftAssert softAssert = new SoftAssert();
         Select dropdown = new Select(dropdownElement);
+
         dropdown.selectByValue("1");
         WebElement selectOption = dropdown.getFirstSelectedOption();
         softAssert.assertEquals("1", selectOption.getDomAttribute("value"),
