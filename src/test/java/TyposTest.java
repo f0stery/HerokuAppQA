@@ -23,7 +23,7 @@ public class TyposTest extends BaseTest {
                 driver.navigate().refresh();
             }
         }
-        softAssert.assertTrue(foundCorrectVersion, "Не найдена корректная версия текста");
+        softAssert.assertTrue(foundCorrectVersion, "За 10 попыток не найдена корректная версия текста");
         softAssert.assertAll();
     }
 }
