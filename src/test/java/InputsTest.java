@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class InputsTest extends BaseTest {
 
-    @Test
+    @Test (testName = "Валидация поля для ввода")
     public void checkInputs() {
         SoftAssert softAssert = new SoftAssert();
         driver.get("https://the-internet.herokuapp.com/inputs");

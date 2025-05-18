@@ -5,12 +5,11 @@ import org.testng.asserts.SoftAssert;
 
 public class TyposTest extends BaseTest {
 
-    @Test
+    @Test (testName = "Проверка корректности текста на странице")
     public void checkTypos() {
         driver.get("https://the-internet.herokuapp.com/typos");
         WebElement paragraph = driver.findElement(By.tagName("p"));
         String expectedText = paragraph.getText();
-        SoftAssert softAssert = new SoftAssert();
         boolean foundCorrectVersion = false;
 
         for (int i = 0; i < 10; i++) {

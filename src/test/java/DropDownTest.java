@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class DropDownTest extends BaseTest {
 
-    @Test
+    @Test (testName = "Проверка выбора значения в dropbox")
     public void checkDropDown() {
         driver.get("https://the-internet.herokuapp.com/dropdown");
         WebElement dropdownElement = driver.findElement(By.id("dropdown"));
