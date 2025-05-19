@@ -7,7 +7,7 @@ import java.util.List;
 
 public class AddRemoveElementsTest extends BaseTest {
 
-    @Test
+    @Test (testName = "Проверка добавления/удаления элементов")
     public void checkAddRemoveElements() {
         driver.get("https://the-internet.herokuapp.com/add_remove_elements/");
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();

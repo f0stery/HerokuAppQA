@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CheckBoxesTest extends BaseTest {
 
-    @Test
+    @Test (testName = "Проверка выбора чек-боксов")
     public void checkFirstBox() {
         driver.get("https://the-internet.herokuapp.com/checkboxes");
         List<WebElement> boxes = driver.findElements(By.cssSelector("input[type=checkbox]"));
